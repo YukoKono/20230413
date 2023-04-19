@@ -43,7 +43,7 @@ st.image("tarot_reader.png")
 st.write("ワシがお前の運勢をタロットで占ってみるわいのう。占って欲しいことは何じゃ？")
 #この文言もchatGPTにて「老婆っぽい口調」で言い換えたもの。
 
-user_input = st.text_input("相談ごとを入力してください。", key="user_input", on_change=communicate)
+user_input = st.text_input("相談ごとを入力してください：", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
